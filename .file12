@@ -1,0 +1,3 @@
+First, we create a Dir object for the target directory and grab its entries. Next comes a sequence of manipulations on the array of entries. Using the delete_if array method, we remove all that begin with a dot. Then, we do an in-place mapping of the entry array so that each entry includes the full path to the file. This is accomplished with two useful methods: the instance method Dir#path, which returns the original directory path underlying this particular Dir instance (/usr/local/src/ruby/lib/minitest); and File.join, which joins the path to the filename with the correct separator (usually /, but it’s somewhat system-dependent).
+
+David A. Black. The Well-Grounded Rubyist, Second Edition (Kindle Locations 8381-8386). Manning Publications. Kindle Edition. 
